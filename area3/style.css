@@ -1,0 +1,218 @@
+/* ====== AREA 1 ======*/
+
+
+
+/* ====== AREA 2 ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== AREA 3 ======*/
+
+.title_container {
+  width: auto;
+  display: flex;
+  height: 25px;
+    /*delete this line later*/
+  flex-direction: row;
+  justify-content: center;
+  padding: 2px;
+  margin-bottom: 2px;
+
+}
+
+.title_border {
+  width: auto;
+  padding: 2px 4px;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.title_text {
+  font-weight: bold;
+}
+
+.wifi_logo {
+  height: 12px;
+  width: 15px;
+}
+
+
+.carousel_container {
+  width: auto;
+  height: 680px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.button_container {
+  display: flex;
+  width: auto;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  justify-content: space-between;
+}
+
+.left_button, .right_button {
+  font-size: 16px;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+
+
+/*
+.area3_title {
+  width: 200px;
+  height: 30px;
+  border: 2px solid red;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+
+.full_setup_img {
+  width: 250px;
+  height: 250px;
+  position: center;
+  padding-top: 20px;
+}
+
+.minnie {
+  width: 250px;
+  height: 250px;
+  position: center;
+}
+
+.router {
+  width: 250px;
+  height: 250px;
+  position: center;
+}
+
+.laptop {
+  width: 250px;
+  height: 250px;
+  position: center;
+}
+
+.bottom_interactive_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle_interactive_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+}
+
+.left_arrow {
+  width: 300px;
+  height: 100px;
+  transform: rotate(-25deg);
+}
+
+.right_arrow {
+  width: 300px;
+  height: 100px;
+  transform: rotate(25deg);
+}
+
+
+
+
+
+
+
+
+
+=====================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousl-container {
+  display: flex;   
+    height: 700px;
+    width: 1510px;     
+}
+
+
+.carousel-area1, 
+.carousel-area2, 
+.carousel-area3 { 
+  display: flex;
+  flex-direction: column;    
+  width: 533px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+.area3-slide1 {
+  height: 677px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.area3-photo img {
+  height: 350px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.area3-description {
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.area3-button {
+  height: 20px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.minnie-info {
+  display: none;
+}
+
+.minnie:hover .minnie-info {
+  display: block;
+}
+
+
+
+*/
