@@ -119,3 +119,83 @@
   height: 100%;
 }
 
+.right-interactive-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.router-container {
+  display: flex;
+  justify-content: center;
+  height: 33%;
+  border: 2px solid green;
+}
+
+.arrow-container {
+  display: flex;
+  height: 33%;
+  border: 2px solid blue;
+}
+
+
+.laptop-minnie-container {
+  height: 34%;
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: space-between;
+}
+
+.router {
+  width: 33%;
+  height: 100%;
+}
+
+.laptop-and-router {
+  width: 50%;
+  height: 100%;
+  border: 1px solid purple;
+  position: relative;
+}
+
+.minnie-and-router {
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  position: relative;
+}
+
+.arrow-1 {
+  margin-top: 50px;
+  width: 210px;
+  height: 25px;
+  background-color: black;
+  position: absolute;
+  left: 200px;
+  top: 45px;
+  transform: rotate(-55deg);
+}
+
+.arrow-1::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: -8px;
+  border-right: 12px solid black;
+  border-bottom: 12px solid black;
+  transform: scale(1.5) rotate(-45deg);
+}
+
+.laptop {
+  width: 33%;
+  height: 100%;
+}
+
+.minnie {
+  width: 33%;
+  height: 100%;
+}
+
+
