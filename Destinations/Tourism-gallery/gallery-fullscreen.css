@@ -1,0 +1,211 @@
+/* Full-browser-window attraction viewer */
+
+#attraction-lightbox {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    z-index: 99999 !important;
+}
+
+/* The pop-up fills the browser window */
+#attraction-lightbox > div {
+    position: relative !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: 100% !important;
+    max-height: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background: #071326 !important;
+    color: white !important;
+    display: block !important;
+    overflow: hidden !important;
+}
+
+/* The photograph covers the entire window */
+#attraction-large {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Visitor information overlays the photograph */
+#attraction-name,
+#attraction-location,
+#attraction-description,
+#attraction-lightbox p,
+#attraction-source {
+    position: absolute !important;
+    z-index: 2 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    color: white !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,.8);
+}
+
+#attraction-name {
+    bottom: 150px !important;
+    font-size: clamp(22px, 3vw, 38px) !important;
+}
+
+#attraction-location {
+    bottom: 118px !important;
+}
+
+#attraction-lightbox p:has(#attraction-count) {
+    bottom: 86px !important;
+}
+
+#attraction-description {
+    bottom: 36px !important;
+    max-width: 900px !important;
+}
+
+#attraction-source:not([hidden]) {
+    bottom: 10px !important;
+    color: #bce4ff !important;
+}
+
+/* Dark gradient behind the information */
+#attraction-lightbox > div::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,.88)
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Close button stays above the photograph */
+#attraction-close {
+    position: absolute !important;
+    top: 18px !important;
+    right: 22px !important;
+    z-index: 10 !important;
+    background: white !important;
+    color: black !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 30px !important;
+    cursor: pointer !important;
+}
+
+#attraction-source[hidden] {
+    display: none !important;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    #attraction-name {
+        bottom: 180px !important;
+    }
+
+    #attraction-location {
+        bottom: 148px !important;
+    }
+
+    #attraction-lightbox p:has(#attraction-count) {
+        bottom: 110px !important;
+    }
+
+    #attraction-description {
+        bottom: 35px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* FIX: Fullscreen gallery photograph */
+
+#attraction-lightbox {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100dvh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: 99999 !important;
+    background: black !important;
+}
+
+#attraction-lightbox > div {
+    position: relative !important;
+    width: 100vw !important;
+    height: 100dvh !important;
+    max-width: none !important;
+    max-height: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+}
+
+#attraction-large {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100dvh !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+#attraction-info {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 5 !important;
+    padding: 25px 30px !important;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.92)
+    ) !important;
+    color: white !important;
+}
+
+#attraction-info h2,
+#attraction-info p {
+    position: static !important;
+    color: white !important;
+    margin: 6px 0 !important;
+    padding: 0 !important;
+}
+
+#attraction-close {
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 10 !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: white !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 50% !important;
+    font-size: 30px !important;
+    cursor: pointer !important;
+}
+
+/* Hide the viewer until a photograph is clicked */
+#attraction-lightbox {
+    display: none;
+}
