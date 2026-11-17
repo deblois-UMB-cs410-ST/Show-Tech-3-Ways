@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tourist Attractions | Page 2 | ShowTech</title>
+<style>
+body {
+  margin: 0;
+  padding: 30px;
+  background: #07172e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+h1, .subtitle { text-align: center; }
+.subtitle { color: #b5c5da; margin-bottom: 35px; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.card {
+  min-width: 0;
+  background: #142b48;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+.card h3 { margin: 12px 14px 4px; }
+.card p { margin: 0 14px 16px; color: #b5c5da; }
+nav { text-align: center; margin: 30px; }
+nav a { color: #a9d8ff; margin: 0 15px; }
+@media(max-width:900px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:500px) {
+  .gallery { grid-template-columns: 1fr; }
+}
+</style>
+<link rel="stylesheet" href="gallery-fullscreen.css?v=2">
+
+<style>
+.showtech-home {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 1000;
+    background: #ffffff;
+    color: #07172e;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+.showtech-home:hover {
+    background: #ffd166;
+}
+</style>
+
+</head>
+<body>
+<h1>World's Most Visited Tourist Attractions</h1>
+<p class="subtitle">ShowTech | Tourism Gallery | Page 2 of 8</p>
+
+<main class="gallery">
+  <article class="card">
+    <img src="images/page2/christ_redeemer.jpg" alt="Christ the Redeemer">
+    <h3>Christ the Redeemer</h3><p>Rio de Janeiro, Brazil</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/petra.jpg" alt="Petra">
+    <h3>Petra</h3><p>Jordan</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/niagara_falls.jpg" alt="Niagara Falls">
+    <h3>Niagara Falls</h3><p>Canada / USA</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/mount_fuji.jpg" alt="Mount Fuji">
+    <h3>Mount Fuji</h3><p>Japan</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/burj_khalifa.jpg" alt="Burj Khalifa">
+    <h3>Burj Khalifa</h3><p>Dubai, UAE</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/angkor_wat.jpg" alt="Angkor Wat">
+    <h3>Angkor Wat</h3><p>Siem Reap, Cambodia</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/grand_canyon.jpg" alt="Grand Canyon">
+    <h3>Grand Canyon</h3><p>Arizona, USA</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/sagrada_familia.jpg" alt="Sagrada Familia">
+    <h3>Sagrada Família</h3><p>Barcelona, Spain</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/stonehenge.jpg" alt="Stonehenge">
+    <h3>Stonehenge</h3><p>Wiltshire, England</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/acropolis.jpg" alt="Acropolis">
+    <h3>Acropolis</h3><p>Athens, Greece</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/chichen_itza.jpg" alt="Chichen Itza">
+    <h3>Chichén Itzá</h3><p>Yucatán, Mexico</p>
+  </article>
+  <article class="card">
+    <img src="images/page2/victoria_falls.jpg" alt="Victoria Falls">
+    <h3>Victoria Falls</h3><p>Zambia / Zimbabwe</p>
+  </article>
+</main>
+<nav>
+  <a href="index.html">Previous: Page 1</a>
+  <span>Page 2 of 8</span>
+  <a href="page3.html">Next: Page 3</a>
+</nav>
+<script src="gallery-click.js"></script>
+
+<a class="showtech-home" href="../homepage-96-preview.html">
+    Home
+</a>
+
+</body>
+</html>
