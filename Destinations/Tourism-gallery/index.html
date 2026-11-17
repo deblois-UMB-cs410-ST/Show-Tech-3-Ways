@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>World Tourist Attractions | ShowTech</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      background: #07172e;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #b5c5da;
+      margin-bottom: 35px;
+    }
+     .gallery {
+         display: grid;
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+         gap: 18px;
+         max-width: 1400px;
+         width: 100%;
+         margin: 0 auto;
+     }
+
+     .card {
+         min-width: 0;
+         background: #142b48;
+         border-radius: 12px;
+         overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 12px 14px 4px;
+    }
+
+    .card p {
+      margin: 0 14px 16px;
+      color: #b5c5da;
+    }
+
+    .placeholder {
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      border: 1px dashed #55708d;
+      color: #a9bdd5;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+<link rel="stylesheet" href="gallery-fullscreen.css?v=2">
+
+<style>
+.showtech-home {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 1000;
+    background: #ffffff;
+    color: #07172e;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+.showtech-home:hover {
+    background: #ffd166;
+}
+</style>
+
+</head>
+<body>
+
+  <h1>World's Most Visited Tourist Attractions</h1>
+  <p class="subtitle">
+    ShowTech | Tourism Gallery | Page 1 of 8
+  </p>
+
+  <main class="gallery">
+
+    <article class="card">
+      <img src="images/times_square_clean.png"
+           alt="Times Square in New York City">
+      <h3>Times Square</h3>
+      <p>New York City, USA</p>
+    </article>
+
+    <article class="card">
+      <img src="images/sistine_chapel.jpg"
+           alt="Sistine Chapel in Vatican City">
+      <h3>Sistine Chapel</h3>
+      <p>Vatican City</p>
+    </article>
+
+    <article class="card">
+      <img src="images/mecca.jpg"
+           alt="Masjid al-Haram in Mecca">
+      <h3>Hajj — Mecca</h3>
+      <p>Mecca, Saudi Arabia</p>
+    </article>
+
+    <article class="card">
+      <img src="images/eiffel_tower.jpg"
+           alt="Eiffel Tower in Paris, France">
+      <h3>Eiffel Tower</h3>
+      <p>Paris, France</p>
+      </article>
+        
+    <article class="card">
+      <img src="images/great_wall.jpg"
+           alt="Great Wall of China">
+      <h3>Great Wall of China</h3>
+      <p>Beijing Region, China</p>
+    </article>
+
+    <article class="card">
+      <img src="images/taj_mahal.jpg"
+           alt="Taj Mahal in Agra, Indiaqqq">
+      <h3>Taj Mahal</h3>
+      <p>Agra, India</p>
+    </article>
+
+    <article class="card">
+      <img src="images/pyramids.jpg"
+           alt="Pyramids of Giza in Egypt">
+      <h3>Pyramids of Giza</h3>
+      <p>Giza, Egypt</p>
+    </article>
+
+    <article class="card">
+      <img src="images/colosseum.jpg"
+           alt="Colosseum in Rome, Italy">
+      <h3>Colosseum</h3>
+      <p>Rome, Italy</p>
+    </article>
+
+      
+    <article class="card">
+      <img src="images/statue_liberty.jpg"
+           alt="Statue of Liberty in New York Harbor">
+      <h3>Statue of Liberty</h3>
+    <p>New York City, USA</p>
+    </article>
+
+    <article class="card">
+      <img src="images/machu_picchu.jpg"
+           alt="Ancient Inca ruins at Machu Picchu">
+      <h3>Machu Picchu</h3>
+    <p>Cusco Region, Peru</p>
+    </article>
+
+    <article class="card">
+      <img src="images/big_ben.jpg"
+           alt="Elizabeth Tower and Big Ben in London">
+      <h3>Big Ben</h3>
+    <p>London, United Kingdom</p>
+    </article>
+
+    <article class="card">
+      <img src="images/sydney_opera.jpg"
+           alt="Sydney Opera House in Australia">
+      <h3>Sydney Opera House</h3>
+    <p>Sydney, Australia</p>
+    </article>
+
+  </main>
+
+<nav style="text-align:center; margin:30px;">
+  <a href="page2.html" style="color:#a9d8ff;">
+    Next: Page 2 &rarr;
+  </a>
+</nav>
+<script src="gallery-click.js"></script>
+
+<a class="showtech-home" href="../homepage-96-preview.html">
+    Home
+</a>
+
+</body>
+</html>
