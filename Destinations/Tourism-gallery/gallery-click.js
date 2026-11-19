@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.createElement("div");
   overlay.id = "attraction-lightbox";
