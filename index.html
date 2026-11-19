@@ -1,74 +1,111 @@
-   b                     
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Show me Tech</title>
+  <link rel="stylesheet" href="format.css">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="visitor-gallery.css">
+  <link rel="stylesheet" href="carousel.css">
+  <script src="./carousel.js" defer type="module" charset="utf-8"></script>
 </head>
+
 <body>
+
   <main>
-    <section>
-      <!--<h1>World Sites with lots of visitors</h1>--> 
-    </section>
-    <section>
-      <h1>Dedekind Invents the Key Definition for Writing Programs</h1>
-	<h1>S(n)=n+1 (successor function)</h1>
-	<img src="Richard_Dedekind_1900s.jpg" alt="This Guy's Mug">
-	<p>In mathematics, a set A is Dedekind-infinite (named after the German mathematician Richard Dedekind) if some proper subset B of A is equinumerous to A</p>
-	<p>"A system is said to be infinite when it is similar to a proper part of itself"</p>
+    <div class="carousl-container">
+      <div class="carousel-area1">
+        <div class="visitor-gallery">
 
-	<script> <!--based on https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_head-->
-		function timeLine(num) {
-			if(num === tl) {
-    				document.getElementById("timeDisplay").innerHTML = "DESELECT BUTTON";
-        			tl = 0;
-    			}
-    			else if(num === 1){
-    				document.getElementById("timeDisplay").innerHTML = "1843: Ada Lovelace creates the first machine algorithm. Utilizing Charles Babbage's Difference machine--an automatic mechanical calculator designed to tabulate polynomial functions designed in the 1920s-- (need more info)";
-        			tl = 1;
-    			}
-    			else if(num === 2){
-    				document.getElementById("timeDisplay").innerHTML = "1889: Gieseppe Peano publishes \"The principles of arithmetic presented by a new method\", containing simplified versions of Dedekind-Peano axioms derived from the successor function and induction.";
-        			tl = 2;
-    			}
-    			else if(num === 3){
-    				document.getElementById("timeDisplay").innerHTML = "1936: Alan Turing creates the concept of a universal \"Turing\" machine (ELABORORATE)";
-        			tl = 3;
-    			}
-    			else if(num === 4){
-    				document.getElementById("timeDisplay").innerHTML = "1942: The first automatic electronic digital computer known as the Atanasoff-Berry computer--first concieved in 1937 and built by John Vincent Atanasoff and Clifford Berry--successfully tested (elaborate)";
-        			tl = 4;
-    			}
-			 else if(num === 5){
-                                document.getElementById("timeDisplay").innerHTML = "BUTTON 5 SELECTED";
-                                tl = 5;
-                        }
-			else {
-				document.getElementById("timeDisplay").innerHTML = "that shouldn't happen";
-			}
-		}
-		let tl = 0;
-	</script>
-	<p id="timeDisplay">BUTTON TEST</p>
- 	<div class="btn-group">
-                <button type="button" onclick="timeLine(1)">1843</button>
-                <button type="button" onclick="timeLine(2)">1889</button>
-                <button type="button" onclick="timeLine(3)">1936</button>
-                <button type="button" onclick="timeLine(4)">1942</button>
-		<button type="button" onclick="timeLine(5)">5</button>
-  	</div>
-	<p>"I regard the whole of arithmetic as a necessary, or at least natural, consequence of the simplest arithmetic act, that of counting, and counting itself as nothing else than the successive creation of the infinite series of positive integers in which each individual is defined by the one immediately preceding;"</p>
-	<p>"In science nothing capable of proof ought to be accepted without proof."</p>
-	<p>add more quotes, citations probably, maybe add hyperlink to source? Everything after here in the section is experimental</p>
-	<p>Dedekind's picture is experimental, its there now in case we want to keep it, look into using href</p>
-	<a href="https://archive.org/details/essaysintheoryof00dedeuoft/mode/2up">READ MORE</a>
-    </section>
-    <section>
-      <!--<h1>Show Minnie Front-End and Back-End</h1>-->
-    </section>
+          <div class="visitor-item havetooltip">
+            <span class="tooltip-h">
+              <img src="times_square.png" alt="Times Square">
+              <span class="tooltip">
+                Times Square is located in New York City, USA.
+                It is famous for its bright lights, entertainment,
+                shopping, and tourist attractions.
+                <br>Location: Manhattan, New York City, USA
+                <br>Average Daily Visitors: Approximately 330,000
+                <br>Average Yearly Visitors: Approximately 50 Million
+              </span>
+            </span>
+          </div>
+
+          <div class="visitor-item havetooltip">
+            <span class="tooltip-h">
+              <img src="sistine_chapel_ceiling.jpg" alt="Sistine Chapel">
+              <span class="tooltip">
+                The Sistine Chapel, located in Vatican City and
+                surrounded by Rome, Italy, is one of the most
+                recognized Christian churches in the world.
+                Built between 1473 and 1481, it contains some
+                of the most recognizable paintings in the world.
+                The chapel includes works by Michelangelo,
+                including The Last Judgement.
+                <br>Location: Vatican City, Rome, Italy
+                <br>Average Daily Visitors: 20,000 to 30,000
+                <br>Average Yearly Visitors: 6 to 7 Million
+              </span>
+            </span>
+          </div>
+
+          <div class="visitor-item havetooltip">
+            <span class="tooltip-h">
+              <img src="mecca.jpg" alt="Mecca">
+              <span class="tooltip">
+                Mecca is a city in Saudi Arabia and the holiest
+                city in Islam. It is an important destination
+                for Muslim pilgrims who travel there for Hajj
+                and Umrah throughout the year.
+                <br>Location: Mecca, Saudi Arabia
+                <br>Average Daily Visitors: Varies by season
+                <br>Annual Hajj Pilgrims: Approximately 1.7 Million (2024)
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-area2">
+        area2
+      </div>
+
+      <div id="area-3-carousel" class="carousel-area3"> <!-- gave an ID so JS can reference -Arjun- -->
+        <div class="area3-slide1 carousel-slide active"> <!-- added carousel-slide class and active -Arjun-  -->
+          <div class="area3-photo">
+            <img
+              src="https://www.servethehome.com/wp-content/uploads/2020/07/Project-TinyMiniMicro-HPE-ProLiant-MicroServer-Gen10-Plus-and-TMM-Nodes.jpg">
+          </div>
+          <div class="area3-slide1-description">
+            <header>Minnie</header>
+
+            <p>Minnie is a personal internet server.</p>
+            <p>More descriptions to be added...</p>
+          </div>
+        </div>
+        <div class="area3-slide2 carousel-slide area3-slide1"> <!-- added carousel-slide class -Arjun- -->
+          <div class="area3-photo">
+            <img src="minnie_router.jpg">
+          </div>
+          <div class="area3-slide2-description">
+            <header>System</header>
+            <p>Minnie can be seen using a router</p>
+            <p>More descriptions to be added..</p>
+          </div>
+        </div>
+
+
+        <div class="area3-button">
+          <button id="previous">Previous</button>
+          <button id="next">Next</button>
+
+        </div>
+
+      </div>
+
+
+    </div>
   </main>
-</body>
-</html>
 
-<!--test
-Hey ?? Simba. Job well done
-????-->
+</body>
+
+</html>

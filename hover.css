@@ -1,0 +1,33 @@
+p {
+    padding-top: 20px;
+}
+
+/* Tooltip appearance and positioning */
+.tooltip {
+    display: none;
+    position: absolute;
+    z-index: 50;
+    background-color: #e5e5e5;
+    width: 200px;
+    max-width: 200px;
+    box-sizing: border-box;
+    white-space: normal;
+    padding: 7px;
+    top: -2em;
+    left: 0;
+    color: rgb(29, 29, 29);
+    border-radius: 4px 4px 4px 0px;
+    border: solid 1px rgb(29, 29, 29);
+    overflow-wrap: anywhere;
+}
+
+/* Display tooltip when hovered */
+.havetooltip:hover .tooltip {
+    display: block;
+}
+
+/* Tooltip holder */
+.tooltip-h {
+    position: relative;
+    display: inline-block;
+}
