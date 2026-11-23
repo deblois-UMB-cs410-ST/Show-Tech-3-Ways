@@ -2,18 +2,32 @@
 <html>
 <head>
   <title>Show me Tech</title>
-  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="destinations.css">
 </head>
 <body>
-  <main>
+  <main class="card">
     <h1 id="dest-name"></h1>
-    <img id="dest-image" alt="">
+
+    <div class="image-frame">
+      <img id="dest-image" alt="">
+    </div>
+
     <p id="dest-description"></p>
-    <ul>
-      <li>Location: <span id="dest-location"></span></li>
-      <li>Average Daily Visitors: <span id="dest-daily"></span></li>
-      <li>Average Yearly Visitors: <span id="dest-yearly"></span></li>
-    </ul>
+
+    <div class="facts">
+      <div class="fact">
+        <span class="fact-label">Location</span>
+        <span class="fact-value" id="dest-location"></span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Average Daily Visitors</span>
+        <span class="fact-value" id="dest-daily"></span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Average Yearly Visitors</span>
+        <span class="fact-value" id="dest-yearly"></span>
+      </div>
+    </div>
   </main>
 
   <script src="destinations.js"></script>
@@ -35,7 +49,5 @@
       document.getElementById("dest-name").textContent = "Destination not found";
     }
   </script>
-
 </body>
-
 </html>
