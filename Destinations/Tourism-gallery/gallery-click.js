@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.createElement("div");
   overlay.id = "attraction-lightbox";
@@ -66,11 +67,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
       title.textContent = name;
       location.textContent = paragraph?.textContent.trim() || "";
+const pageMatch = window.location.pathname.match(/page(\d+)\.html$/);
+const page = pageMatch ? Number(pageMatch[1]) : 1;
 
-      visitors.textContent = "Annual figure not yet verified";
+const headings = Array.from(document.querySelectorAll("h3"));
+const match = name.match(/^(\d+)\./);
 
-      description.textContent =
-        "Explore this destination's remarkable scenery, architecture, history, and cultural significance.";
+const number = match
+    ? Number(match[1])
+    : (page - 1) * 12 + headings.indexOf(heading) + 1;
+
+const data = attractionDescriptions[number - 1];
+
+visitors.textContent = data ? data[0] : "";
+description.textContent = data ? data[1] : "";
 
       previousFocus = document.activeElement;
       overlay.style.display = "flex";
